@@ -11,6 +11,16 @@
 
 body {
   height: 100vh;
-  background-color: #333;
+  background-color: #fff;
   font-family: "Dancing Script", "Open Sans", sans-serif;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
