@@ -1,8 +1,8 @@
 @use"./reset";
-@use"./colors" as colors;
-@use"./mixins";
+@use"./colors" as *;
+@use"./mixins" as *;
 
-// =======================
+// ============================
 
 
 // ============ NAV ============
@@ -13,6 +13,7 @@
   right: 30px;
   padding: 1em;
   background: none;
+  background-color: blue;
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 100;
@@ -20,13 +21,33 @@
 
   &:focus{
     outline:none;
-    border: 1px solid rgba(255,255,255 .5);
+    border: 1px solid rgba(255,255,255, .5);
     border-radius: 4px;
   }
 
 
   &__box{
     position: relative;
+    height: 30px;
+    width: 40px;
+  }
+
+  &__bars, &::before, &::after{
+    @include burgerBars;
+  }
+
+  &__bars{
+    width: 100%;
+  }
+
+  &::before{
+    top: 50%;
+    width: 50%;
+  }
+
+  &::after{
+    top: 75%;
+    width: 25%;
   }
 
 }
