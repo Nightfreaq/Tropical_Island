@@ -13,7 +13,7 @@
   right: 30px;
   padding: 1em;
   background: none;
-  background-color: blue;
+  // background-color: blue;
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 100;
@@ -39,15 +39,16 @@
   &__bars{
     width: 100%;
   }
-
+  
   &::before{
     top: 50%;
-    width: 50%;
+    width: 60%;
   }
 
   &::after{
     top: 75%;
-    width: 25%;
+    width: 30%;
   }
+
 
 }
