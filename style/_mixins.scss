@@ -10,8 +10,8 @@
   transition: width .3s;
 }
 
-@mixin heroImages($bgimg){
-  background-image:$blue-gradient, url('$bgImg');
+@mixin heroImages($bgImg){
+  background-image:$blue-gradient, url($bgImg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

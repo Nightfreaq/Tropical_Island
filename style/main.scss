@@ -70,7 +70,8 @@
   padding: 2em;
   height: 70vh;
   text-align: center;
-  @include heroImages('Part_Three/Tropical_Island/img/header_island_small.jpg');
+  color: $pure-white;
+  @include heroImages('/Tropical_Island/img/header_island_small.jpg');
 }
 
 .header__btn {
