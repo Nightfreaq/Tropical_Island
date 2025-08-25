@@ -15,6 +15,58 @@ body {
   font-family: "Dancing Script", "Open Sans", sans-serif;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.white-block {
+  position: absolute;
+  height: 40px;
+  width: 60%;
+  background-color: white;
+}
+.white-block-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+.white-block-right {
+  bottom: 0;
+  right: -50px;
+  transform: skew(45deg);
+}
+
+.header__btn {
+  padding: 1em;
+}
+
+.btn-special-animation {
+  position: relative;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  z-index: 0;
+}
+.btn-special-animation::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  transform-origin: right;
+  scale: 0 1;
+  transition: scale 0.3s;
+  z-index: -1;
+}
+.btn-special-animation:hover::before {
+  scale: 1 1;
+  transform-origin: left;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -59,4 +111,11 @@ body {
 .burger-btn:hover .burger-btn__bars::before,
 .burger-btn:hover .burger-btn__bars::after {
   width: 100%;
+}
+
+.header__btn {
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: lime;
 }/*# sourceMappingURL=main.css.map */
