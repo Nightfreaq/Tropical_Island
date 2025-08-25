@@ -1,73 +1,81 @@
-@use"./reset";
-@use"./colors" as *;
-@use"./mixins" as *;
-@use"./components";
+@use "./reset";
+@use "./colors" as *;
+@use "./mixins" as *;
+@use "./components";
 
 // ============================
 
-
 // ============ NAV ============
 
-.burger-btn{
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  padding: 1em;
-  background: none;
-  // background-color: blue;
-  border: 1px solid transparent;
-  cursor: pointer;
-  z-index: 100;
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	padding: 1em;
+	background: none;
+	// background-color: blue;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 100;
 
+	&:focus {
+		outline: none;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 4px;
+	}
 
-  &:focus{
-    outline:none;
-    border: 1px solid rgba(255,255,255, .5);
-    border-radius: 4px;
-  }
+	&__box {
+		position: relative;
+		height: 30px;
+		width: 40px;
+	}
 
-  &__box{
-    position: relative;
-    height: 30px;
-    width: 40px;
-  }
+	&__bars,
+	&__bars::before,
+	&__bars::after {
+		@include burgerBars;
+	}
 
-  &__bars, &__bars::before, &__bars::after{
-    @include burgerBars;
-  }
+	&__bars {
+		width: 100%;
 
-  &__bars{
-    width: 100%;
+		&::before {
+			top: 13px;
+			width: 60%;
+		}
 
-    
-    &::before{
-      top: 13px;
-      width: 60%;
-    }
-    
-    &::after{
-      top: 27px;
-      width: 30%;
-      transition-delay: .1s;
-    }
-  }
+		&::after {
+			top: 27px;
+			width: 30%;
+			transition-delay: 0.1s;
+		}
+	}
 
-  &:hover{
-    .burger-btn__bars::before,
-    .burger-btn__bars::after{
-      width: 100%;
-    }
-  }
-
+	&:hover {
+		.burger-btn__bars::before,
+		.burger-btn__bars::after {
+			width: 100%;
+		}
+	}
 }
 
 // ======================== HEADER =============================
 
-.header__btn{
-padding: 1em;
-text-decoration: none;
-text-transform: uppercase;
-background-color: lime;
-
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  height: 70vh;
+  text-align: center;
+  @include heroImages('Part_Three/Tropical_Island/img/header_island_small.jpg');
 }
 
+.header__btn {
+	padding: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: lime;
+}
