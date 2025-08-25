@@ -25,30 +25,41 @@
     border-radius: 4px;
   }
 
-
   &__box{
     position: relative;
     height: 30px;
     width: 40px;
   }
 
-  &__bars, &::before, &::after{
+  &__bars, &__bars::before, &__bars::after{
     @include burgerBars;
   }
 
   &__bars{
     width: 100%;
-  }
-  
-  &::before{
-    top: 50%;
-    width: 60%;
+
+    
+    &::before{
+      top: 13px;
+      width: 60%;
+    }
+    
+    &::after{
+      top: 27px;
+      width: 30%;
+      transition-delay: .1s;
+    }
   }
 
-  &::after{
-    top: 75%;
-    width: 30%;
+  &:hover{
+    .burger-btn__bars::before,
+    .burger-btn__bars::after{
+      width: 100%;
+    }
   }
-
 
 }
+
+// .burger-btn:hover .burger-btn__bars::before, .burger-btn:hover .burger-btn__bars::after{
+//   width: 100%;
+// }

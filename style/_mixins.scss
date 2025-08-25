@@ -3,8 +3,7 @@
 @mixin burgerBars{
   position: absolute;
   right: 0;
-  // display: block;
-  height: 3px;
+  height: 5px;
   content: '';
   background-color: $pure-white;
   background-color: red;
