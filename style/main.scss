@@ -71,6 +71,7 @@
   text-align: center;
   color: $pure-white;
   @include heroImages('/Tropical_Island/img/header_island_small.jpg');
+  background-attachment: scroll;
 }
 
 .header__btn {
