@@ -90,10 +90,9 @@ body {
 .burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
   position: absolute;
   right: 0;
-  height: 5px;
+  height: 3px;
   content: "";
   background-color: #fff;
-  background-color: red;
   transition: width 0.3s;
 }
 .burger-btn__bars {
