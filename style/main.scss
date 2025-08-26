@@ -11,7 +11,7 @@
 	position: fixed;
 	top: 20px;
 	right: 30px;
-	padding: 1em;
+	padding: .7em;
 	background: none;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -72,6 +72,17 @@
   color: $pure-white;
   @include heroImages('/Tropical_Island/img/header_island_small.jpg');
   background-attachment: scroll;
+
+  &__heading{
+    margin-bottom: 1rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+  }
+
+  &__text{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
 }
 
 .header__btn {

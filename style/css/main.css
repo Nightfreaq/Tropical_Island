@@ -11,7 +11,7 @@
 
 body {
   background-color: #fff;
-  font-family: "Dancing Script", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Dancing Script", sans-serif;
 }
 
 .wrapper {
@@ -70,7 +70,7 @@ body {
   position: fixed;
   top: 20px;
   right: 30px;
-  padding: 1em;
+  padding: 0.7em;
   background: none;
   border: 1px solid transparent;
   cursor: pointer;
@@ -126,6 +126,15 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: scroll;
+}
+.header__heading {
+  margin-bottom: 1rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+.header__text {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .header__btn {
