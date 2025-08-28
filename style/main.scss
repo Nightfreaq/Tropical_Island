@@ -15,8 +15,13 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  translate: 100% 0%;
   background-image: $blue-gradient-solid;
   z-index: 100;
+
+  &--active{
+    translate: 0 0;
+  }
 
   &__item{
     position: relative;

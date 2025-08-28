@@ -73,8 +73,12 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
+  translate: 100% 0%;
   background-image: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
   z-index: 100;
+}
+.nav--active {
+  translate: 0 0;
 }
 .nav__item {
   position: relative;
