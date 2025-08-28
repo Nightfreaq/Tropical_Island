@@ -18,6 +18,7 @@
   translate: 100% 0%;
   background-image: $blue-gradient-solid;
   z-index: 100;
+  transition: translate .5s;
 
   &--active{
     translate: 0 0;

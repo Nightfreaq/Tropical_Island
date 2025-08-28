@@ -1,21 +1,16 @@
-document.addEventListener('DOMContentLoaded', function (){
-  const nav = document.querySelector('.nav')
 
-  function addShadow(){
+const nav = document.querySelector('.nav')
+const bars = document.querySelector('.burger-btn')
+const navLinks = document.querySelectorAll('.nav__item')
 
-    if(window.scrollY >=300){
-      nav.classList.add('bg-shadow')
-    } else{
-      nav.classList.remove('bg-shadow')
-    }
-  }
+const handleNav = () => {
+  nav.classList.toggle('nav--active')
 
-  window.addEventListener('scroll', addShadow)
-})
+  navLinks.forEach(link =>{
+    link.addEventListener('click', () =>{
+      nav.classList.remove('nav--active')
+    })
+  })
+}
 
-const navbar = document.querySelector('.navbar-collapse')
-
-document.addEventListener('click', () => {
-  if(navbar.classList.contains('show')){
-    navbar.classList.remove('show')}
-})
+bars.addEventListener('click', handleNav)
