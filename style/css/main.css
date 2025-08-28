@@ -150,6 +150,18 @@ body {
   width: 100%;
 }
 
+@keyframes navLinkanimation {
+  from {
+    translate: 200% 0%;
+  }
+  to {
+    translata: 0 0;
+  }
+}
+.links-animation {
+  animation: navLinkanimation 1s both;
+}
+
 .header {
   position: relative;
   display: flex;
