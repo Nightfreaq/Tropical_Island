@@ -178,6 +178,14 @@
       font-size: 2rem;
     }
   }
+
+  .section-title{
+    font-size: 3.8rem;
+  }
+
+  .section-padding{
+    padding: 8em 4em;
+  }
 }
 
 @media (width >=992px){
@@ -189,6 +197,14 @@
 
   .header{
     background-image: $blue-gradient, url('/Tropical_Island/img/header_island_big.jpg');
+  }
+
+    .section-title{
+    font-size: 4.2rem;
+  }
+
+  .section-padding{
+    padding: 10em 6em;
   }
 
 }
