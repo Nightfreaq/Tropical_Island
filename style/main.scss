@@ -131,7 +131,7 @@
 	height: 70vh;
 	text-align: center;
 	color: $pure-white;
-	@include heroImages("/Tropical_Island/img/header_island_small.jpg");
+	@include heroImage("/Tropical_Island/img/header_island_small.jpg");
 	background-attachment: scroll;
   // z-index: 0;
 
