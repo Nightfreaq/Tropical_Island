@@ -218,6 +218,15 @@ body {
 
 .dreams__box {
   display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.dreams__img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.dreams__title {
+  margin-bottom: 0.5em;
 }
 
 @media (width >= 768px) {
