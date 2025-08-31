@@ -216,6 +216,10 @@ body {
   background-color: #eee;
 }
 
+.dreams__box {
+  display: flex;
+}
+
 @media (width >= 768px) {
   .white-block {
     height: 50px;
