@@ -288,4 +288,19 @@ body {
   .section-padding {
     padding: 10em 6em;
   }
+  .dreams__box {
+    margin: 5em 0;
+  }
+  .dreams__box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 4em;
+  }
+  .dreams__title {
+    font-size: 3.2rem;
+  }
+  .dreams__text {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

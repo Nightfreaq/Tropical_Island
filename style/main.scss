@@ -270,4 +270,27 @@
     padding: 10em 6em;
   }
 
+  .dreams{
+
+    &__box{
+      margin: 5em 0;
+
+      &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 4em;
+      }
+    }
+
+    &__title{
+      font-size: 3.2rem;
+    }
+
+    &__text{
+      font-size: 2rem;
+    }
+
+  }
+
 }
