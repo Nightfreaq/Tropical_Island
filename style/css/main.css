@@ -243,6 +243,12 @@ body {
   .dreams__box-text--right {
     text-align: right;
   }
+  .dreams__box-img {
+    width: 40%;
+  }
+  .dreams__box-img--right {
+    order: 1;
+  }
 }
 @media (width >= 768px) {
   .white-block {
@@ -266,6 +272,9 @@ body {
   }
 }
 @media (width >= 992px) {
+  .nav__item {
+    font-size: 3.5rem;
+  }
   .burger-btn {
     top: 50px;
     right: 50px;

@@ -198,7 +198,17 @@
           text-align: right;
         }
       }
+
+      &-img{
+        width: 40%;
+
+        &--right{
+          order:1;
+        }
+      }
     }
+
+
   }
 
 }
@@ -235,6 +245,13 @@
 }
 
 @media (width >=992px){
+
+  .nav{
+
+    &__item{
+      font-size: 3.5rem;
+    }
+  }
 
   .burger-btn{
     top: 50px;
