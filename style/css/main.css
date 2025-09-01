@@ -249,6 +249,10 @@ body {
   .dreams__box-img--right {
     order: 1;
   }
+  .dreams__img {
+    margin-bottom: 0;
+    min-height: 300px;
+  }
 }
 @media (width >= 768px) {
   .white-block {
@@ -298,9 +302,9 @@ body {
     margin-bottom: 4em;
   }
   .dreams__title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
   .dreams__text {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
