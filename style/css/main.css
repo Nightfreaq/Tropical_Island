@@ -228,7 +228,22 @@ body {
 .dreams__title {
   margin-bottom: 0.5em;
 }
+.dreams__text {
+  font-size: 1.4rem;
+}
 
+@media (width >= 576px) {
+  .dreams__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dreams__box-text {
+    width: 55%;
+  }
+  .dreams__box-text--right {
+    text-align: right;
+  }
+}
 @media (width >= 768px) {
   .white-block {
     height: 50px;
