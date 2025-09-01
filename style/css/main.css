@@ -32,7 +32,7 @@ body {
   transform: skew(45deg);
 }
 .white-block-right {
-  bottom: 0;
+  top: 0;
   right: -50px;
   transform: skew(45deg);
 }
@@ -230,6 +230,12 @@ body {
 }
 .dreams__text {
   font-size: 1.4rem;
+}
+
+.hero-img {
+  position: relative;
+  background: #333;
+  height: 500px;
 }
 
 @media (width >= 576px) {
