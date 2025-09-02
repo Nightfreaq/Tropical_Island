@@ -243,6 +243,9 @@ body {
   color: #fff;
   overflow: hidden;
 }
+.hero-img hr {
+  color: #fff;
+}
 .hero-img__title {
   margin-bottom: 0.5em;
   font-size: 4.5rem;
@@ -294,6 +297,13 @@ body {
   .section-padding {
     padding: 8em 4em;
   }
+  .hero-img {
+    padding: 30rem 2em;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
 @media (width >= 992px) {
   .nav__item {
@@ -326,5 +336,11 @@ body {
   }
   .dreams__text {
     font-size: 1.8rem;
+  }
+  .hero-img {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/Tropical_Island/img/hero_polynesia_big.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

@@ -187,6 +187,10 @@
   color: $pure-white;
   overflow: hidden;
 
+  hr{
+    color: $pure-white;
+  }
+
   &__title{
     margin-bottom: .5em;
     font-size: 4.5rem;
@@ -265,6 +269,15 @@
   .section-padding{
     padding: 8em 4em;
   }
+
+  .hero-img{
+    padding: 30rem 2em;
+
+    hr{
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
 }
 
 @media (width >=992px){
@@ -314,6 +327,10 @@
       font-size: 1.8rem;
     }
 
+  }
+
+  .hero-img{
+    @include heroImage("/Tropical_Island/img/hero_polynesia_big.jpg");
   }
 
 }
