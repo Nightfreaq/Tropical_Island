@@ -182,12 +182,19 @@
 
 .hero-img{
   position: relative;
-  background: #333;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  padding: 5em 1em;
-  @include heroImage("/Tropical_Island/img/hero_polynesia_small");
+  padding: 20em 2em;
+  @include heroImage("/Tropical_Island/img/hero_polynesia_small.jpg");
+  text-align: center;
+  color: $pure-white;
+
+  &__title{
+    font-size: 4rem;
+    margin-bottom: 1em;
+  }
+
+  &__text{
+    font-size: 2.4rem;
+  }
 }
 
 
