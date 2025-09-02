@@ -120,7 +120,6 @@
 	color: $pure-white;
 	@include heroImage("/Tropical_Island/img/header_island_small.jpg");
 	background-attachment: scroll;
-  // z-index: 0;
 
 
 	&__heading {
@@ -186,10 +185,12 @@
   @include heroImage("/Tropical_Island/img/hero_polynesia_small.jpg");
   text-align: center;
   color: $pure-white;
+  overflow: hidden;
 
   &__title{
-    font-size: 4rem;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    font-size: 4.5rem;
+    font-family: "Dancing Script", cursive;
   }
 
   &__text{
