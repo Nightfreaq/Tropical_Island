@@ -184,6 +184,10 @@
   position: relative;
   background: #333;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 5em 1em;
+  @include heroImage("/Tropical_Island/img/hero_polynesia_small");
 }
 
 

@@ -236,6 +236,13 @@ body {
   position: relative;
   background: #333;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 5em 1em;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/Tropical_Island/img/hero_polynesia_small"), linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75));
 }
 
 @media (width >= 576px) {
