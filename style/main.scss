@@ -204,6 +204,22 @@
 }
 
 
+// ==================== MAIN ISLANDS ===============
+
+.islands{
+  // display: flex;
+
+  &__card{
+    position: relative;
+    margin: 1em 0;
+    height: 400px;
+    text-align: center;
+    list-style-position: inside;
+    perspective: 800px;
+    
+  }
+}
+
 // ===================== @MEDIA=================
 
 @media (width >= 576px){
