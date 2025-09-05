@@ -207,7 +207,7 @@
 // ==================== MAIN ISLANDS ===============
 
 .islands{
-  // display: flex;
+  display: flex;
 
   &__card{
     position: relative;
@@ -218,22 +218,56 @@
     list-style-position: inside;
     perspective: 800px;
 
+    &:hover{
+      .islands__card-img{
+        rotate:y -180deg;
+        opacity: 0;
+      }
+
+      .islands__card-info{
+        rotate:y 0;
+        opacity: 1;
+      }
+    }
+
     &-img{
       padding: 2em;
       height: 100%;
       border-radius: 6px;
       background-size: cover;
+      transition: rotate .5s, opacity .5s;
 
       &--first{
         background-image: $light-blue-gradient, url('/Tropical_Island/img/islands_1_small.jpg');
       }
       &--second{
-        background-image: $light-blue-gradient, url('/Tropical_Island/img/islands_2_small.jpg');
+        background-image: $blue-gradient, url('/Tropical_Island/img/islands_2_small.jpg');
       }
       &--third{
-        background-image: $light-blue-gradient, url('/Tropical_Island/img/islands_3_small.jpg');
+        background-image: $purple-gradient, url('/Tropical_Island/img/islands_3_small.jpg');
       }
 
+      &-title{
+        font-family: "Dancing Script";
+        font-size: 2.5rem;
+      }
+
+      &-info{
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        font-size: 1.4rem;
+
+        i{
+          margin-right: 0.2em;
+        }
+      }
+
+    }
+
+    &-info{
+      rotate: y -180deg;
+      opacity:0;
     }
     
   }
