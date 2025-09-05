@@ -8,50 +8,48 @@
 
 // ============ NAV ============
 
-.nav{
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  translate: 100% 0%;
-  background-image: $blue-gradient-solid;
-  z-index: 100;
-  transition: translate .5s;
+.nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	translate: 100% 0%;
+	background-image: $blue-gradient-solid;
+	z-index: 100;
+	transition: translate 0.5s;
 
-  &--active{
-    translate: 0 0;
-  }
+	&--active {
+		translate: 0 0;
+	}
 
-  &__item{
-    position: relative;
-    display: block;
-    margin: .5em 0;
-    padding: 0.5em;
-    font-size: 2.5rem;
-    color: $pure-white;
-    text-decoration: none;
+	&__item {
+		position: relative;
+		display: block;
+		margin: 0.5em 0;
+		padding: 0.5em;
+		font-size: 2.5rem;
+		color: $pure-white;
+		text-decoration: none;
 
-    &::before{
-      position: absolute;
-      content:'';
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 100%;
-      background-color: $pure-white;
-      scale: 1 0;
-      transition: scale .3s;
-    }
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			background-color: $pure-white;
+			scale: 1 0;
+			transition: scale 0.3s;
+		}
 
-    &:hover::before{
-      scale: 1 1;
-    }
-  }
-
-
+		&:hover::before {
+			scale: 1 1;
+		}
+	}
 }
 
 .burger-btn {
@@ -105,7 +103,6 @@
 	}
 }
 
-
 // ======================== HEADER =============================
 
 .header {
@@ -120,7 +117,6 @@
 	color: $pure-white;
 	@include heroImage("/Tropical_Island/img/header_island_small.jpg");
 	background-attachment: scroll;
-
 
 	&__heading {
 		margin-bottom: 1rem;
@@ -155,270 +151,294 @@
 
 // ==================== MAIN DREAMS ================
 
-.dreams{
+.dreams {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
 
-  &__box{
-    display: flex;
-    flex-direction: column;
-    margin: 2em 0;
-  }
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
 
-  &__img{
-    width: 100%;
-    margin-bottom: 1em;
-  }
+	&__title {
+		margin-bottom: 0.5em;
+	}
 
-  &__title{
-    margin-bottom: 0.5em;
-  }
-
-  &__text{
-    font-size: 1.4rem;
-  }
+	&__text {
+		font-size: 1.4rem;
+	}
 }
 
 // ==================== MAIN HERO ================
 
-.hero-img{
-  position: relative;
-  padding: 20em 2em;
-  @include heroImage("/Tropical_Island/img/hero_polynesia_small.jpg");
-  text-align: center;
-  color: $pure-white;
-  overflow: hidden;
+.hero-img {
+	position: relative;
+	padding: 20em 2em;
+	@include heroImage("/Tropical_Island/img/hero_polynesia_small.jpg");
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
 
-  hr{
-    color: $pure-white;
-  }
+	hr {
+		color: $pure-white;
+	}
 
-  &__title{
-    margin-bottom: 1em;
-    font-size: 4.5rem;
-    font-family: "Dancing Script", cursive;
-  }
+	&__title {
+		margin-bottom: 1em;
+		font-size: 4.5rem;
+		font-family: "Dancing Script", cursive;
+	}
 
-  &__text{
-    padding: 0.5em 0;
-    font-size: 2.4rem;
-  }
+	&__text {
+		padding: 0.5em 0;
+		font-size: 2.4rem;
+	}
 }
-
 
 // ==================== MAIN ISLANDS ===============
 
-.islands{
-  display: flex;
+.islands {
+	display: flex;
 
-  &__card{
-    position: relative;
-    margin: 1em 0;
-    height: 400px;
-    color:$pure-white;
-    text-align: center;
-    list-style-position: inside;
-    perspective: 800px;
+	&__card {
+		position: relative;
+		margin: 1em 0;
+		height: 400px;
+		color: $pure-white;
+		text-align: center;
+		list-style-position: inside;
+		perspective: 800px;
 
-    &:hover{
-      .islands__card-img{
-        rotate:y -180deg;
-        opacity: 0;
-      }
+		&:hover {
+			.islands__card-img {
+				rotate: y -180deg;
+				opacity: 0;
+			}
 
-      .islands__card-info{
-        rotate:y 0;
-        opacity: 1;
-      }
-    }
+			.islands__card-info {
+				rotate: y 0deg;
+				opacity: 1;
+			}
+		}
 
-    &-img{
-      padding: 2em;
-      height: 100%;
+		&-img {
+			padding: 2em;
+			height: 100%;
+			border-radius: 6px;
+			background-size: cover;
+			transition: rotate 0.5s, opacity 0.5s;
+
+			&--first {
+				background-image: $light-blue-gradient,
+					url("/Tropical_Island/img/islands_1_small.jpg");
+			}
+			&--second {
+				background-image: $blue-gradient,
+					url("/Tropical_Island/img/islands_2_small.jpg");
+			}
+			&--third {
+				background-image: $purple-gradient,
+					url("/Tropical_Island/img/islands_3_small.jpg");
+			}
+
+			&-title {
+				font-family: "Dancing Script";
+				font-size: 2.5rem;
+			}
+
+			&-info {
+				position: absolute;
+				bottom: 20px;
+				right: 30px;
+				font-size: 1.4rem;
+
+				i {
+					margin-right: 0.2em;
+				}
+			}
+		}
+
+		&-info {
+      position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-image: $light-blue-gradient-solid;
       border-radius: 6px;
-      background-size: cover;
-      transition: rotate .5s, opacity .5s;
-
-      &--first{
-        background-image: $light-blue-gradient, url('/Tropical_Island/img/islands_1_small.jpg');
-      }
-      &--second{
-        background-image: $blue-gradient, url('/Tropical_Island/img/islands_2_small.jpg');
-      }
-      &--third{
-        background-image: $purple-gradient, url('/Tropical_Island/img/islands_3_small.jpg');
-      }
+      rotate: y 180deg;
+      opacity:0;
+      transition: rotate 0.5s, opacity 0.5s;
 
       &-title{
+        position: absolute;
+        top: 1.2em;
+        left: 50%;
+        translate: -50% 0%;
         font-family: "Dancing Script";
         font-size: 2.5rem;
       }
 
-      &-info{
-        position: absolute;
-        bottom: 20px;
-        right: 30px;
-        font-size: 1.4rem;
+      &-list{
+        margin: 0 auto;
+        width: 60%;
+        list-style: none;
+        
+        &-item{
+          padding: .5em 0;
+          font-size: 1.6rem;
+          border-bottom: 1px solid $light-white;
 
-        i{
-          margin-right: 0.2em;
+          &:last-of-type{
+            border-bottom: none;
+          }
         }
       }
-
-    }
-
-    &-info{
-      rotate: y -180deg;
-      opacity:0;
-    }
-    
-  }
+		}
+	}
 }
 
 // ===================== @MEDIA=================
 
-@media (width >= 576px){
+@media (width >= 576px) {
+	.dreams {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
 
-  .dreams{
+			&-text {
+				width: 55%;
 
-    &__box{
-      flex-direction: row;
-      justify-content: space-between;
+				&--right {
+					text-align: right;
+				}
+			}
 
-      &-text{
-        width: 55%;
+			&-img {
+				width: 40%;
 
-        &--right{
-          text-align: right;
-        }
-      }
+				&--right {
+					order: 1;
+				}
+			}
+		}
 
-      &-img{
-        width: 40%;
-
-        &--right{
-          order:1;
-        }
-      }
-    }
-
-    &__img{
-      margin-bottom: 0;
-      min-height: 300px;
-    }
-
-
-  }
-
+		&__img {
+			margin-bottom: 0;
+			min-height: 300px;
+		}
+	}
 }
 
-@media (width >= 768px){
+@media (width >= 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
 
-  .white-block{
-    height: 50px;
-    width: 45%;
-  }
+	.header {
+		&__heading {
+			font-size: 6rem;
+		}
 
-  .header{
+		&__text {
+			font-size: 2.2rem;
+		}
 
-    &__heading{
-      font-size: 6rem;
-    }
+		&__btn {
+			font-size: 2rem;
+		}
+	}
 
-    &__text{
-      font-size: 2.2rem;
-    }
+	.section-title {
+		font-size: 3.8rem;
+	}
 
-    &__btn{
-      font-size: 2rem;
-    }
-  }
+	.section-padding {
+		padding: 8em 4em;
+	}
 
-  .section-title{
-    font-size: 3.8rem;
-  }
+	.hero-img {
+		padding: 30em 2em;
 
-  .section-padding{
-    padding: 8em 4em;
-  }
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
 
-  .hero-img{
-    padding: 30em 2em;
+		&__title {
+			font-size: 5.2rem;
+		}
 
-    hr{
-      margin: 0 auto;
-      width: 70%;
-    }
-
-    &__title{
-      font-size: 5.2rem;
-    }
-
-    &__text{
-      font-size: 2.7rem;
-    }
-  }
+		&__text {
+			font-size: 2.7rem;
+		}
+	}
 }
 
-@media (width >=992px){
+@media (width >=992px) {
+	.nav {
+		&__item {
+			font-size: 3.5rem;
+		}
+	}
 
-  .nav{
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
 
-    &__item{
-      font-size: 3.5rem;
-    }
-  }
+	.header {
+		background-image: $blue-gradient,
+			url("/Tropical_Island/img/header_island_big.jpg");
+	}
 
-  .burger-btn{
-    top: 50px;
-    right: 50px;
-  }
+	.section-title {
+		font-size: 4.2rem;
+	}
 
-  .header{
-    background-image: $blue-gradient, url('/Tropical_Island/img/header_island_big.jpg');
-  }
+	.section-padding {
+		padding: 10em 6em;
+	}
 
-    .section-title{
-    font-size: 4.2rem;
-  }
+	.dreams {
+		&__box {
+			margin: 5em 0;
 
-  .section-padding{
-    padding: 10em 6em;
-  }
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 4em;
+			}
+		}
 
-  .dreams{
+		&__title {
+			font-size: 2.8rem;
+		}
 
-    &__box{
-      margin: 5em 0;
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
 
-      &-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-bottom: 4em;
-      }
-    }
+	.hero-img {
+		padding: 40em 2em;
+		@include heroImage("/Tropical_Island/img/hero_polynesia_big.jpg");
 
-    &__title{
-      font-size: 2.8rem;
-    }
+		&__title {
+			font-size: 6.5rem;
+		}
 
-    &__text{
-      font-size: 1.8rem;
-    }
-
-  }
-
-  .hero-img{
-    padding: 40em 2em;
-    @include heroImage("/Tropical_Island/img/hero_polynesia_big.jpg");
-
-    &__title{
-      font-size: 6.5rem;
-    }
-
-    hr{
-      width: 60%;
-      max-width: 900px;
-    }
-  }
-
+		hr {
+			width: 60%;
+			max-width: 900px;
+		}
+	}
 }

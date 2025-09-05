@@ -273,7 +273,7 @@ body {
   opacity: 0;
 }
 .islands__card:hover .islands__card-info {
-  rotate: y 0;
+  rotate: y 0deg;
   opacity: 1;
 }
 .islands__card-img {
@@ -306,8 +306,40 @@ body {
   margin-right: 0.2em;
 }
 .islands__card-info {
-  rotate: y -180deg;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+  border-radius: 6px;
+  rotate: y 180deg;
   opacity: 0;
+  transition: rotate 0.5s, opacity 0.5s;
+}
+.islands__card-info-title {
+  position: absolute;
+  top: 1.2em;
+  left: 50%;
+  translate: -50% 0%;
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+}
+.islands__card-info-list {
+  margin: 0 auto;
+  width: 60%;
+  list-style: none;
+}
+.islands__card-info-list-item {
+  padding: 0.5em 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #eee;
+}
+.islands__card-info-list-item:last-of-type {
+  border-bottom: none;
 }
 
 @media (width >= 576px) {
