@@ -264,6 +264,12 @@ body {
   list-style-position: inside;
   perspective: 800px;
 }
+.islands__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 6px;
+  background-size: cover;
+}
 
 @media (width >= 576px) {
   .dreams__box {
