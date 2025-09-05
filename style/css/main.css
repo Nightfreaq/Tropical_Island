@@ -260,6 +260,7 @@ body {
   position: relative;
   margin: 1em 0;
   height: 400px;
+  color: #fff;
   text-align: center;
   list-style-position: inside;
   perspective: 800px;
@@ -269,6 +270,15 @@ body {
   height: 100%;
   border-radius: 6px;
   background-size: cover;
+}
+.islands__card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("/Tropical_Island/img/islands_1_small.jpg");
+}
+.islands__card-img--second {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("/Tropical_Island/img/islands_2_small.jpg");
+}
+.islands__card-img--third {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("/Tropical_Island/img/islands_3_small.jpg");
 }
 
 @media (width >= 576px) {
