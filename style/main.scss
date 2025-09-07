@@ -201,22 +201,13 @@
 // ==================== MAIN ISLANDS ===============
 
 .islands {
-	display: flex;
-
-  &__cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 
 	&__card {
 		position: relative;
 		margin: 1em;
 		height: 400px;
-    width: 45%;
 		color: $pure-white;
 		text-align: center;
-		list-style-position: inside;
 		perspective: 800px;
 
 		&:hover {
@@ -286,11 +277,16 @@
 			&-title {
 				@include cardPosition;
 				top: 1.2em;
+        width: 100%;
 				font-family: "Dancing Script";
 				font-size: 2.5rem;
 			}
 
 			&-list {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // translate: -50% -50%;
 				margin: 0 auto;
 				width: 60%;
 				list-style: none;
@@ -307,9 +303,6 @@
 			}
 
 			&-btn {
-				// position: absolute;
-				// left: 50%;
-				// translate: -50% 0%;
 				@include cardPosition;
 				bottom: 2em;
 				width: 60%;
@@ -404,6 +397,19 @@
 			font-size: 2.7rem;
 		}
 	}
+
+  .islands{
+      &__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__card{
+    margin: 1em;
+    width: 45%;
+  }
+  }
 }
 
 @media (width >=992px) {
