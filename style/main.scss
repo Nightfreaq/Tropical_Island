@@ -262,62 +262,60 @@
 		}
 
 		&-info {
-      position: absolute;
+			position: absolute;
 			top: 0;
 			left: 0;
 			bottom: 0;
 			right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-image: $light-blue-gradient-solid;
-      border-radius: 6px;
-      rotate: y 180deg;
-      opacity:0;
-      transition: rotate 0.5s, opacity 0.5s;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-image: $light-blue-gradient-solid;
+			border-radius: 6px;
+			rotate: y 180deg;
+			opacity: 0;
+			transition: rotate 0.5s, opacity 0.5s;
 
-      &-title{
-        position: absolute;
-        top: 1.2em;
-        left: 50%;
-        translate: -50% 0%;
-        font-family: "Dancing Script";
-        font-size: 2.5rem;
-      }
+			&-title {
+				@include cardPosition;
+				top: 1.2em;
+				font-family: "Dancing Script";
+				font-size: 2.5rem;
+			}
 
-      &-list{
-        margin: 0 auto;
-        width: 60%;
-        list-style: none;
-        
-        &-item{
-          padding: .5em 0;
-          font-size: 1.6rem;
-          border-bottom: 1px solid $light-white;
+			&-list {
+				margin: 0 auto;
+				width: 60%;
+				list-style: none;
 
-          &:last-of-type{
-            border-bottom: none;
-          }
-        }
-      }
+				&-item {
+					padding: 0.5em 0;
+					font-size: 1.6rem;
+					border-bottom: 1px solid $light-white;
 
-      &-btn{
-        position: absolute;
-        bottom: 2em;
-        width: 60%;
-        padding: 1em 0.5em;
-        left: 50%;
-        translate: -50% 0%;
-        border:none;
-        border-radius: 8px;
-        background-color: $green-color;
-        cursor: pointer;
+					&:last-of-type {
+						border-bottom: none;
+					}
+				}
+			}
 
-        &::before{
-          background-color: $green-color-hover;
-        }
+			&-btn {
+				// position: absolute;
+				// left: 50%;
+				// translate: -50% 0%;
+				@include cardPosition;
+				bottom: 2em;
+				width: 60%;
+				padding: 1em 0.5em;
+				border: none;
+				border-radius: 8px;
+				background-color: $green-color;
+				cursor: pointer;
 
-      }
+				&::before {
+					background-color: $green-color-hover;
+				}
+			}
 		}
 	}
 }
