@@ -324,7 +324,32 @@
 
 .offers{
   position: relative;
-  @include heroImage("/Tropical_Island/img/offer_4_small.jpg")
+  @include heroImage("/Tropical_Island/img/offer_4_small.jpg");
+  overflow: hidden;
+
+  .section-title{
+    color:$pure-white;
+  }
+
+  &__option{
+    margin: 3em 0;
+    box-shadow: 5px 5px 10px #2e2e2e2e;
+    background-color: $pure-white;
+    overflow: hidden;
+
+    &-img{
+      width: 100%;
+      transition:scale .3s;
+
+      &:hover{
+        scale: 1.1;
+      }
+    }
+
+    &-info{
+      padding: 3em;
+    }
+  }
 }
 
 
@@ -335,6 +360,7 @@
 		&__box {
 			flex-direction: row;
 			justify-content: space-between;
+
 
 			&-text {
 				width: 55%;
