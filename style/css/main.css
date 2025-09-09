@@ -381,6 +381,28 @@ body {
 .offers__option-info {
   padding: 3em;
 }
+.offers__option-heading {
+  margin-bottom: 0.5em;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.offers__option-text {
+  margin-bottom: 0.3em;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+}
+.offers__option-btn {
+  margin-top: 0.6em;
+  padding: 0.6em;
+  width: 100%;
+  color: #fff;
+  background-color: #1755e7;
+  border: none;
+  cursor: pointer;
+}
+.offers__option-btn::before {
+  background-color: #164dcc;
+}
 
 @media (width >= 576px) {
   .dreams__box {
