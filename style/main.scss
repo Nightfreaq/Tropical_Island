@@ -322,6 +322,10 @@
 
 // ===================== MAIN OFFERS =============
 
+.offers{
+  position: relative;
+  @include heroImage("/Tropical_Island/img/offer_4_small.jpg")
+}
 
 
 // ===================== @MEDIA=================
