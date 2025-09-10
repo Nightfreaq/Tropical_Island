@@ -432,7 +432,7 @@ body {
     width: 100%;
   }
   .offers__option-img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
   .offers__option-img--right {
@@ -443,6 +443,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+  }
+  .offers__option-heading {
+    margin-bottom: 0.5em;
+    font-size: 3rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
   }
 }
 @media (width >= 768px) {
