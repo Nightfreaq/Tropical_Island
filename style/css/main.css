@@ -398,6 +398,7 @@ body {
   color: #fff;
   background-color: #1755e7;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
 }
 .offers__option-btn::before {
@@ -436,6 +437,12 @@ body {
   }
   .offers__option-img--right {
     order: 1;
+  }
+  .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
   }
 }
 @media (width >= 768px) {
