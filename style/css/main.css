@@ -425,6 +425,18 @@ body {
     margin-bottom: 0;
     min-height: 300px;
   }
+  .offers__option {
+    display: flex;
+    margin: 3em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 100%;
+    height: auto;
+  }
+  .offers__option-img--right {
+    order: 1;
+  }
 }
 @media (width >= 768px) {
   .white-block {

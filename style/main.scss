@@ -411,6 +411,25 @@
 		}
 	}
 
+  .offers{
+
+    &__option{
+      display: flex;
+      margin: 3em 0;
+      width: 100%;
+
+      &-img{
+        width: 100%;
+        height: auto;
+      }
+
+      &-img--right{
+        order:1;
+      }
+
+    }
+  }
+
 }
 
 @media (width >= 768px) {
