@@ -379,7 +379,7 @@ body {
   scale: 1.1;
 }
 .offers__option-info {
-  padding: 3em;
+  padding: 3.5em;
 }
 .offers__option-heading {
   margin-bottom: 0.5em;
@@ -428,11 +428,11 @@ body {
   }
   .offers__option {
     display: flex;
-    margin: 3em 0;
+    margin: 2em 0;
     width: 100%;
   }
   .offers__option-img {
-    width: 80%;
+    width: 50%;
     height: auto;
   }
   .offers__option-img--right {
@@ -442,6 +442,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
     text-align: center;
   }
   .offers__option-heading {
