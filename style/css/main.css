@@ -396,7 +396,7 @@ body {
 .offers__option-btn {
   margin-top: 0.6em;
   padding: 0.6em;
-  width: 90%;
+  width: 100%;
   color: #fff;
   background-color: #1755e7;
   border: none;
@@ -444,7 +444,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: auto;
+    width: 50%;
     text-align: center;
   }
   .offers__option-heading {
@@ -503,7 +503,7 @@ body {
   .offers__option-img {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 350px;
+    height: auto;
   }
 }
 @media (width >= 992px) {
