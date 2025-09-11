@@ -380,6 +380,8 @@ body {
 }
 .offers__option-info {
   padding: 3.5em;
+  background-color: #fff;
+  z-index: 10;
 }
 .offers__option-heading {
   margin-bottom: 0.5em;
@@ -394,7 +396,7 @@ body {
 .offers__option-btn {
   margin-top: 0.6em;
   padding: 0.6em;
-  width: 100%;
+  width: 90%;
   color: #fff;
   background-color: #1755e7;
   border: none;
@@ -442,7 +444,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: auto;
     text-align: center;
   }
   .offers__option-heading {
@@ -494,6 +496,14 @@ body {
   .islands__card {
     margin: 1em;
     width: 45%;
+  }
+  .offers {
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/Tropical_Island/img/offer_4_big.jpg");
+  }
+  .offers__option-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 350px;
   }
 }
 @media (width >= 992px) {
