@@ -381,6 +381,36 @@
   }
 }
 
+// ==================== MAIN REVIEWS ==============
+
+.reviews{
+
+	&__box{
+		position: relative;
+		margin: 3em 2em;
+		padding: 2em;
+		border-radius: 8px;
+		box-shadow: 2px 2px 10px black;
+
+		&-img{
+			position: absolute;
+			top: 0;
+			left: 75%;
+			translate:-50% -50%;
+		
+
+			img{
+				height: 70px;
+				width: 70px;
+				object-fit: cover;
+				border-radius: 50%;
+				
+
+			}
+		}
+	}
+}
+
 
 // ===================== @MEDIA=================
 
