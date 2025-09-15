@@ -414,16 +414,20 @@ body {
   padding: 2em;
   border-radius: 8px;
   box-shadow: 2px 2px 10px black;
+  transition: scale 0.3s;
+}
+.reviews__box:hover {
+  scale: 0.95;
 }
 .reviews__box-img {
   position: absolute;
   top: 5%;
-  left: 85%;
+  left: 80%;
   translate: -50% -50%;
 }
 .reviews__box-img img {
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -490,6 +494,11 @@ body {
   }
   .offers__option-btn {
     padding: 1em;
+  }
+}
+@media (width <= 768px) {
+  .reviews.section-padding {
+    padding: 6em 0;
   }
 }
 @media (width >= 768px) {
