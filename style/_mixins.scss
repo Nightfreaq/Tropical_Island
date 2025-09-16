@@ -23,6 +23,13 @@
   translate: -50% 0;
 }
 
+@mixin contactForm{
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border:none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
 
 
 

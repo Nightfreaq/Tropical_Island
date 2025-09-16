@@ -429,6 +429,33 @@
 	}
 }
 
+// ==================== MAIN CONTACT =============
+
+.contact{
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+
+	.white-block-left{
+		background-color: $dark;
+	}
+
+	&__form, &__form-top{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label{
+		margin-bottom: 0.5em;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+	}
+
+	&__form-input{
+		@include contactForm;
+	}
+}
+
 // ===================== @MEDIA=================
 
 @media (width >= 576px) {
