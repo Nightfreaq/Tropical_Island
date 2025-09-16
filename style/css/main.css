@@ -472,6 +472,18 @@ body {
   border-radius: 8px;
   font-size: 1.6rem;
 }
+.contact__form-textarea {
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  resize: vertical;
+  min-height: 100px;
+}
+.contact__form-btn {
+  align-self: flex-end;
+}
 
 @media (width >= 576px) {
   .dreams__box {

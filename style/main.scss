@@ -431,28 +431,39 @@
 
 // ==================== MAIN CONTACT =============
 
-.contact{
+.contact {
 	position: relative;
 	background-color: $light-white;
 	overflow: hidden;
 
-	.white-block-left{
+	.white-block-left {
 		background-color: $dark;
 	}
 
-	&__form, &__form-top{
+	&__form,
+	&__form-top {
 		display: flex;
 		flex-direction: column;
 	}
 
-	&__form-label{
+	&__form-label {
 		margin-bottom: 0.5em;
 		font-size: 1.8rem;
 		text-transform: uppercase;
 	}
 
-	&__form-input{
+	&__form-input {
 		@include contactForm;
+	}
+
+	&__form-textarea {
+		@include contactForm;
+		resize: vertical;
+		min-height: 100px;
+	}
+
+	&__form-btn{
+		align-self: flex-end;
 	}
 }
 
