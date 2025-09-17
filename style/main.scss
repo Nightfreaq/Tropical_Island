@@ -479,7 +479,22 @@
 	}
 }
 // ===================== MAIN FOOTER ===============
+.footer{
+	color: $pure-white;
+	background-color: $dark;
 
+	.wrapper{
+		padding: 6em 2em 2em;
+	}
+
+	&__box{
+		font-size: 1.4rem;
+	}
+
+	&__box-desktop{
+		display: none;
+	}
+}
 // ===================== @MEDIA=================
 
 @media (width >= 576px) {
