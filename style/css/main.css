@@ -525,7 +525,18 @@ body {
   font-size: 3rem;
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.footer__box-link:hover {
+  color: #eee;
+  text-shadow: 0 0 10px #eee;
+}
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
 }
 
 @media (width >= 576px) {

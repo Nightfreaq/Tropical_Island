@@ -511,10 +511,25 @@
 	
 	&__box-link{
 		padding: 0em 0.2em;
+		// margin: 0 0.5em;
 		font-size: 3rem;
 		color: $pure-white;
 		text-decoration: none;
-		transition: color .3s;
+		transition: color .3s, text-shadow .3s;
+
+		&:hover {
+			color: $light-white;
+			text-shadow: 0 0 10px $light-white;
+		}
+
+		&:first-child{
+			padding-left: 0;
+		}
+	}
+
+	&__bottom-text{
+		padding: 2em;
+		text-align: center;
 	}
 }
 // ===================== @MEDIA=================
