@@ -673,6 +673,33 @@
 			}
 		}
 	}
+
+	.footer__boxes{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__box-desktop{
+		display: block;
+	}
+
+	.footer__box{
+		margin: 0 2em;
+		text-align: center;
+		width: 25%;
+
+		&-list{
+
+			list-style: none;
+
+			&-item{
+				a{
+					color: $pure-white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 
 @media (width >=992px) {

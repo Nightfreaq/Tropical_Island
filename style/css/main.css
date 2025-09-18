@@ -642,6 +642,25 @@ body {
        object-fit: cover;
     height: auto;
   }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer__box {
+    margin: 0 2em;
+    text-align: center;
+    width: 25%;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 @media (width >= 992px) {
   .nav__item {
