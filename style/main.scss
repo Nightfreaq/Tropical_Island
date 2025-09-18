@@ -478,6 +478,7 @@
 		}
 	}
 }
+
 // ===================== MAIN FOOTER ===============
 .footer{
 	color: $pure-white;
@@ -511,7 +512,6 @@
 	
 	&__box-link{
 		padding: 0em 0.2em;
-		// margin: 0 0.5em;
 		font-size: 3rem;
 		color: $pure-white;
 		text-decoration: none;
@@ -532,6 +532,7 @@
 		text-align: center;
 	}
 }
+
 // ===================== @MEDIA=================
 
 @media (width >= 576px) {
@@ -675,7 +676,6 @@
 	}
 
 	.footer{
-
 		&__boxes{
 			display: flex;
 			justify-content: space-between;
@@ -703,21 +703,22 @@
 				list-style: none;
 	
 				&-item{
-					padding: .5em 0;
-					transition: color .3s, text-shadow .3s;
-	
+					margin-bottom: 1em;
+					
 					a{
 						color: $pure-white;
 						text-decoration: none;
+						transition: color .3s, text-shadow .3s;
+					}
+
+					a:hover{
+						color: $light-white;
+						text-shadow: 0 0 10px $pure-white;
 					}
 				}
 			}
 		}
-
 	}
-
-
-
 }
 
 @media (width >=992px) {
