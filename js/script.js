@@ -8,6 +8,7 @@ const footerYear = document.querySelector(".footer__year");
 
 const navShow = () => {
 	nav.classList.toggle("nav--active");
+  btnBars.classList.remove('black-bars-color')
 
 	navLinks.forEach((link) => {
 		link.addEventListener("click", () => {
@@ -34,6 +35,7 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 handleCurrentYear();
+
 
 const handleObserver = () => {
 	const currentSection = window.scrollY;
