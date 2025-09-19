@@ -5,7 +5,11 @@
 @use "./animation";
 
 // ============================
-
+.black-bars-color,
+.black-bars-color::before,
+.black-bars-color::after{
+	background-color: black;
+}
 // ============ NAV ============
 
 .nav {
