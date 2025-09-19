@@ -89,12 +89,6 @@ body {
   animation: navLinkanimation 1s both;
 }
 
-.black-bars-color,
-.black-bars-color::before,
-.black-bars-color::after {
-  background-color: black;
-}
-
 .nav {
   position: fixed;
   top: 0;
@@ -178,6 +172,12 @@ body {
 .burger-btn:hover .burger-btn__bars::before,
 .burger-btn:hover .burger-btn__bars::after {
   width: 100%;
+}
+
+.black-bars-color,
+.black-bars-color::before,
+.black-bars-color::after {
+  background-color: black;
 }
 
 .header {

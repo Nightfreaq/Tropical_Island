@@ -41,7 +41,10 @@ const handleObserver = () => {
 
     if(section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
       btnBars.classList.add('black-bars-color')
+    } else if (!section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
+      btnBars.classList.remove('black-bars-color')
     }
-
   });
 };
+
+window.addEventListener('scroll', handleObserver)

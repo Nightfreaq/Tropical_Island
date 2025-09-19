@@ -5,11 +5,7 @@
 @use "./animation";
 
 // ============================
-.black-bars-color,
-.black-bars-color::before,
-.black-bars-color::after{
-	background-color: black;
-}
+
 // ============ NAV ============
 
 .nav {
@@ -105,6 +101,12 @@
 			width: 100%;
 		}
 	}
+}
+
+.black-bars-color,
+.black-bars-color::before,
+.black-bars-color::after{
+	background-color: black;
 }
 
 // ======================== HEADER =============================
