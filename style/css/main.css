@@ -543,6 +543,8 @@ body {
 .footer__bottom-text {
   padding: 2em;
   text-align: center;
+  font-size: 2rem;
+  color: #fff;
 }
 
 @media (width >= 576px) {
